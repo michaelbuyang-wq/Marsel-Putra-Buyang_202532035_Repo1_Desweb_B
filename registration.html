@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - eye.io</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="image/logo-eyeio.png" alt="Logo eye.io" width="100">
+
+        <h1>eye.io</h1>
+        <p>Mata Pengawas Energi Listrik</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <a href="index.html">Dashboard</a>
+        <a href="content.html">Laporan Konsumsi</a>
+        <a href="detail.html">Detail Konsumsi</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Formulir Pendaftaran eye.io</h2>
+
+            <p>
+                Daftarkan diri untuk menggunakan website eye.io
+                dan mengenal informasi pemantauan konsumsi listrik.
+            </p>
+
+            <form action="#" method="get">
+
+                <div>
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="nama@email.com"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="8" autocomplete="new-password"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="birthdate">Tanggal Lahir</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9+() -]{10,20}"
+                        title="Masukkan nomor telepon dengan panjang 10 sampai 20 karakter." autocomplete="tel"
+                        required>
+                </div>
+
+                <br>
+
+                <fieldset>
+                    <legend>Status Pengguna</legend>
+
+                    <label>
+                        <input type="radio" name="user_status" value="mahasiswa" required>
+                        Mahasiswa
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="user_status" value="umum">
+                        Pengguna Umum
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Minat Penggunaan</legend>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="pemantauan">
+                        Pemantauan konsumsi listrik
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="laporan">
+                        Laporan konsumsi listrik
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="penghematan">
+                        Informasi penghematan energi
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <div>
+                    <label for="reason">Alasan Menggunakan eye.io</label>
+                    <br>
+
+                    <textarea id="reason" name="reason" rows="4" minlength="10" maxlength="500"
+                        placeholder="Tuliskan alasan kamu..." required></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Daftar</button>
+                <button type="reset">Reset Form</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <aside>
+            <h2>Informasi Pendaftaran</h2>
+
+            <p>
+                Formulir ini merupakan contoh implementasi pendaftaran
+                pengguna untuk praktikum HTML. Data belum disimpan
+                ke database.
+            </p>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 eye.io - Mata Pengawas Energi Listrik</p>
+    </footer>
+
+</body>
+
+</html>
